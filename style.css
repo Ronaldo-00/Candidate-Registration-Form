@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: #dee4f0;
+    position: absolute;
+}
+.main{
+    position: relative;
+    max-width: 65%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+.form-heading{
+    max-width: auto;
+    width: 100%;
+    height: auto;
+    border-bottom:1px solid #dee4f0 ;
+    padding: 40px 80px 0 80px;
+}
+.logo{
+    padding: 0 0 15px 0;
+}
+.logo img{
+    width: 200px;
+}
+.form-row{
+    border-bottom: 1px solid #f2f4f9;
+    padding-bottom: 20px;
+}
+.c-f-head{
+    padding: 0 0 15px 0;
+}
+.c-f-head h3{
+    color: #2b2b2b;
+    font-size: 24px;
+}
+.form-content{
+    max-width: auto;
+    width: 100%;
+    height: auto;
+    padding: 40px 80px 0 80px;
+}
+.form-component{
+    width: 100%;
+    height: auto;
+}
+.form-row h3{
+    padding-top: 20px;
+    padding-bottom: 16px;
+    color: #2b2b2b;
+    font-size: 18px;
+}
+.record-form{
+    padding-bottom:16px ;
+}
+.record-form label{
+    color: #6f67d9;
+    font-size: 15px;
+}
+.mandatory{
+    color: #dc5757;
+    font-size: 24px;
+}
+.input-field{
+    width: 100%;
+}
+.input-field input{
+    width: 100%;
+    border: 2px solid #ccd4e3;
+    padding: 10px 0 10px 5px;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.input-field input:focus{
+    border:2px solid #285cc3;
+}
+/* Tooltip css */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip img{
+    width: 15px;
+    cursor: pointer;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -150px;
+    font-size: 14px;
+} 
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/* Work experience column Css */
+#work-duraion-form{
+    display: none;
+}
+.tabular-add{
+    color: #41e00b;
+    padding: 0 0 10px 0;
+}
+.tabular-add a{
+    cursor: pointer;
+}
+.input-field textarea{
+    width: 100%;
+    height: 100px;
+    border: 2px solid #ccd4e3;
+    margin-top: 5px;
+    padding: 6px 10px;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+.input-field textarea:focus{
+    border:2px solid #285cc3;
+}
+/* Selection for month and year field CSS */
+.row-selection-field{
+    width: 100%;
+    display: flex; 
+}
+.col-select-1{
+    width: 45%;
+}
+.col-select-2{
+    width: 10%;
+    text-align: center;
+    margin: auto;
+}
+.col-select-3{
+    width: 45%;
+}
+.col1-m-y{
+    width: 100%;
+    
+}
+.col1-m-y .select{
+    width: 48%;
+    border: 2px solid #ccd4e3;
+    padding: 10px 0 10px 5px;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+.col1-m-y .select:focus{
+    border: 2px solid #285cc3;
+}
+.select option{
+    color: #5c6575;
+    border: 2px solid #285cc3;
+}
+.tabular-del{
+    color: #dc5757;
+    font-size: 14px;
+    float: right;
+}
+.tabular-del a{
+    cursor: pointer;
+}
+/* Educational details column Css */
+#Education-detail-form{
+    display: none;
+}
+/* Attachment information css */
+.input-field-file{
+    width: 50%;
+    padding: 10px 0 10px 0;
+    border: 2px dotted #ccd4e3;
+    text-align: center;
+    cursor: pointer;
+}
+/* submit button css */
+.submit-div{
+    text-align: center;
+    padding-top: 10px;
+}
+.btn-submit{
+    color: #fff;
+    background-color: #41e00b;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background-color: #7ff358;
+}
+
+/* Form footer css */
+
+.form-footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    margin: auto;
+}
+.footer-content{
+    align-items: center;
+}
+.footer-content p{
+    font-size: 14px;
+    color: #5c6575;
+}
+.footer-content p span{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/* Media query for responsive screen */
+@media(max-width:1100px){
+    .main{
+        max-width: 80%;
+    }
+    .form-heading , .form-content{
+        padding-left:40px ;
+        padding-right:40px ;
+    }
+}
+@media(max-width:900px){
+    .main{
+        max-width: 90%;
+    }
+    .form-heading , .form-content{
+        padding-left:30px ;
+        padding-right:30px ;
+    }
+}
+@media(max-width:700px){
+    .row-selection-field{
+        display: block; 
+    }
+    .col-select-1 , .col-select-3{
+        width: 100%;
+    }
+    .col-select-2{
+        padding: 15px 0 15px 0;
+    }
+}
+/* Media query for the tool tip */
+@media(max-width:700px){
+    .tooltip .tooltiptext{
+        width: 200px;
+        font-size: 13px;
+        margin-left: -100px;
+    }
+}

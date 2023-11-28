@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Registration Form</title>
+    <!-- Icon of the webpage -->
+    <link type="icon" href="images/">
+    <!--External stylesheet link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container of the page -->
+    <div class="container">
+        <div class="main">
+            <!-- Form heading contains a logo and the header of form -->
+            <div class="form-heading">
+                <div class="logo">
+                    <a href="#"><img src="images/logo1.png"></a>
+                </div>
+                <div class="c-f-head">
+                    <h3>Candidate Register Form</h3>
+                </div>
+            </div>
+            <!-- Form content contains a full form details -->
+            <div class="form-content">
+                <div class="form-component">
+                    <!-- This row contains the basic details of the candidate -->
+                    <div class="form-row">
+                        <h3>Basic Details</h3>
+                        <div class="form-for-basic">
+                            <div class="record-form">
+                                <label>First Name <span class="mandatory">*</span></label>
+                                <div class="input-field"><input></div>
+                            </div>
+                        </div>
+                        <div class="form-for-basic">
+                            <div class="record-form">
+                                <label>Last Name <span class="mandatory">*</span></label>
+                                <div class="input-field"><input></div>
+                            </div>
+                        </div>
+                        <div class="form-for-basic">
+                            <div class="record-form">
+                                <label>Email <span class="mandatory">*</span></label>
+                                <div class="input-field"><input></div>
+                            </div>
+                        </div>
+                        <div class="form-for-basic">
+                            <div class="record-form">
+                                <label>Mobile Number <span class="mandatory">*</span></label>
+                                <div class="input-field"><input></div>
+                            </div>
+                        </div>
+                        <div class="form-for-basic">
+                            <div class="record-form">
+                                <label>Enter the Job post Title you are applying for <span class="mandatory">*</span>
+                                    <span class="tooltip">
+                                        <img src="images/i icon.png">
+                                        <span class="tooltiptext">Enter the Job post Title you are applying for</span>
+                                    </span>
+                                </label>
+                                <div class="input-field"><input></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This row contains the professional details -->
+                    <div class="form-row">
+                        <h3>Professional Details</h3>
+                        <div class="form-for-basic">
+                            <div class="record-form">
+                                <label>Experience in Years</label>
+                                <div class="input-field"><input></div>
+                            </div>
+                            <div class="record-form">
+                                <label>Skill set</label>
+                                <div class="input-field"><input placeholder="Add skills"></div>
+                            </div>
+                            <div class="record-form">
+                                <label>Expected Salary</label>
+                                <div class="input-field"><input placeholder="&#8377;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This row contains the work experience details -->
+                    <div class="form-row">
+                        <h3>Work Experience Details</h3>
+                        <div class="tabular-add">
+                            <a id="table-group-work-add" onclick="add_Work_Row()">+ Add</a>
+                        </div>
+
+                        <!-- This row contains the working details -->
+                        <div class="form-for-basic" id="work-duraion-form">
+                            <div class="tabular-del">
+                                <a id="table-group-work-del" onclick="del_Work_Row()">Delete</a>
+                            </div>
+                            <div class="record-form">
+                                <label>Occupation/ Title</label>
+                                <div class="input-field"><input></div>
+                            </div>
+                            <div class="record-form">
+                                <label>Company</label>
+                                <div class="input-field"><input></div>
+                            </div>
+                            <div class="record-form">
+                                <label>Summary</label>
+                                <div class="input-field"><textarea></textarea></div>
+                            </div>
+                            <div class="record-form">
+                                <label>Work Duration</label>
+                                <div class="row-selection-field">
+                                    <!-- Work duration starting month and year -->
+                                    <div class="col-select-1">
+                                        <div class="col1-m-y">
+                                            <!-- Work duration starting month -->
+                                            <select class="select" name="Start-month">
+                                                <option value=" " disabled selected>Month</option>
+                                                <option>January</option>
+                                                <option>Februrary</option>
+                                                <option>March</option>
+                                                <option>April</option>
+                                                <option>May</option>
+                                                <option>June</option>
+                                                <option>July</option>
+                                                <option>Augest</option>
+                                                <option>September</option>
+                                                <option>October</option>
+                                                <option>November</option>
+                                                <option>December</option>
+                                            </select>
+                                            <!-- Work duration starting year -->
+                                            <select class="select" name="start-year">
+                                                <option value=" " disabled selected>Year</option>
+                                                <option>2023</option><option>2022</option><option>2021</option><option>2020</option>
+                                                <option>2019</option><option>2018</option><option>2017</option><option>2016</option>
+                                                <option>2015</option><option>2014</option><option>2013</option><option>2012</option>
+                                                <option>2011</option><option>2010</option><option>2009</option><option>2008</option>
+                                            </select>
+                                        </div>    
+                                    </div>
+                                    <div class="col-select-2">
+                                        <label>To</label>
+                                    </div>
+                                    <!-- Work duration ending month and year -->
+                                    <div class="col-select-3">
+                                        <div class="col1-m-y">
+                                            <!-- Work duration ending month  -->
+                                            <select class="select" name="End-month">
+                                                <option value=" " disabled selected>Month</option>
+                                                <option>January</option>
+                                                <option>Februrary</option>
+                                                <option>March</option>
+                                                <option>April</option>
+                                                <option>May</option>
+                                                <option>June</option>
+                                                <option>July</option>
+                                                <option>Augest</option>
+                                                <option>September</option>
+                                                <option>October</option>
+                                                <option>November</option>
+                                                <option>December</option>
+                                            </select>
+                                            <!-- Work duration ending  year -->
+                                            <select class="select" name="End-year">
+                                                <option value=" " disabled selected>Year</option>
+                                                <option>2023</option><option>2022</option><option>2021</option><option>2020</option>
+                                                <option>2019</option><option>2018</option><option>2017</option><option>2016</option>
+                                                <option>2015</option><option>2014</option><option>2013</option><option>2012</option>
+                                                <option>2011</option><option>2010</option><option>2009</option><option>2008</option>
+                                            </select>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This row contains the Educational details -->
+                    <div class="form-row">
+                        <h3>Educational Details</h3>
+                        <div class="tabular-add">
+                            <a id="table-group-edu-add" onclick="add_Edu_Row()">+ Add</a>
+                        </div>
+
+                        <!-- This row contains the Educational details -->
+                        <div class="form-for-basic" id="Education-detail-form">
+                            <div class="tabular-del">
+                                <a id="table-group-edu-del" onclick="del_Edu_Row()">Delete</a>
+                            </div>
+                            <div class="record-form">
+                                <label>Instition / School</label>
+                                <div class="input-field"><input></div>
+                            </div>
+                            <div class="record-form">
+                                <label>Major / Department</label>
+                                <div class="input-field"><input></div>
+                            </div>
+                            <div class="record-form">
+                                <label>Degree</label>
+                                <div class="input-field"><input></div>
+                            </div>
+                            <div class="record-form">
+                                <label>Work Duration</label>
+                                <div class="row-selection-field">
+                                    <!-- Educational starting month and year -->
+                                    <div class="col-select-1">
+                                        <div class="col1-m-y">
+                                            <!-- Educational starting month -->
+                                            <select class="select" name="Start-month">
+                                                <option value=" " disabled selected>Month</option>
+                                                <option>January</option>
+                                                <option>Februrary</option>
+                                                <option>March</option>
+                                                <option>April</option>
+                                                <option>May</option>
+                                                <option>June</option>
+                                                <option>July</option>
+                                                <option>Augest</option>
+                                                <option>September</option>
+                                                <option>October</option>
+                                                <option>November</option>
+                                                <option>December</option>
+                                            </select>
+                                            <!-- Educationalstarting year -->
+                                            <select class="select" name="start-year">
+                                                <option value=" " disabled selected>Year</option>
+                                                <option>2023</option><option>2022</option><option>2021</option><option>2020</option>
+                                                <option>2019</option><option>2018</option><option>2017</option><option>2016</option>
+                                                <option>2015</option><option>2014</option><option>2013</option><option>2012</option>
+                                                <option>2011</option><option>2010</option><option>2009</option><option>2008</option>
+                                            </select>
+                                        </div>    
+                                    </div>
+                                    <div class="col-select-2">
+                                        <label>To</label>
+                                    </div>
+                                    <!-- Educational ending month and year -->
+                                    <div class="col-select-3">
+                                        <div class="col1-m-y">
+                                            <!-- Educational ending month  -->
+                                            <select class="select" name="End-month">
+                                                <option value=" " disabled selected>Month</option>
+                                                <option>January</option>
+                                                <option>Februrary</option>
+                                                <option>March</option>
+                                                <option>April</option>
+                                                <option>May</option>
+                                                <option>June</option>
+                                                <option>July</option>
+                                                <option>Augest</option>
+                                                <option>September</option>
+                                                <option>October</option>
+                                                <option>November</option>
+                                                <option>December</option>
+                                            </select>
+                                            <!-- Educational ending  year -->
+                                            <select class="select" name="End-year">
+                                                <option value=" " disabled selected>Year</option>
+                                                <option>2023</option><option>2022</option><option>2021</option><option>2020</option>
+                                                <option>2019</option><option>2018</option><option>2017</option><option>2016</option>
+                                                <option>2015</option><option>2014</option><option>2013</option><option>2012</option>
+                                                <option>2011</option><option>2010</option><option>2009</option><option>2008</option>
+                                            </select>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This row contains the Social Network details -->
+                    <div class="form-row">
+                        <h3>Socail Network </h3>
+                        <div class="form-for-basic">
+                            <div class="record-form">
+                                <label>Linked In</label>
+                                <div class="input-field"><input></div>
+                            </div>
+                            <div class="record-form">
+                                <label>Twitter</label>
+                                <div class="input-field"><input placeholder="@"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This row contains the Attachment Information details -->
+                    <div class="form-row">
+                        <h3>Attachment Information</h3>
+                        <div class="form-for-basic">
+                            <div class="record-form">
+                                <label>Resume <span class="mandatory">*</span>
+                                    <span class="tooltip">
+                                        <img src="images/i icon.png">
+                                        <span class="tooltiptext">Upload in Doc,PDF Format</span>
+                                    </span>
+                                </label>
+                                <div class="input-field-file">
+                                    <input type="file" id="files" style="display: none;">
+                                    <label for="files" class="file">Browse</label>
+                                </div>
+                            </div>
+                            <div class="submit-div">
+                                <button class="btn-submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Form footer -->
+            <div class="form-footer">
+                <div class="footer-content">
+                    <p>Designed by <span>Ronaldo</span></p>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- External javascript file link -->
+    <script src="script.js"></script>
+</body>
+</html>

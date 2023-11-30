@@ -10,6 +10,22 @@
     background-color: #dee4f0;
     position: absolute;
 }
+/* Css for the top function button */
+#top-toggle{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background-color: #41e00b;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 15px;
+    z-index: 99;
+    border-radius: 50%;
+    cursor: pointer;
+}
 .main{
     position: relative;
     max-width: 65%;
